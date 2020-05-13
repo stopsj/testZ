@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小逼崽子你到底行不行</title>
+    <style>
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>猜数字小游戏2.0</h1>
+    <p>是这样的，我不知道你玩过猜数字小游戏没有。虽然那个很酷，但是现在这个更酷哦。这次轮到我来猜你这个小逼崽子心里想的数字了。你gkd在1-100之间想一个数字嗷，快点，然后在下面存起来，免得你忘记。</p>
+    <div class="from">
+        <label for="guessField">搁右边这个框输进去嗷：</label><input type="text" id="guessField" class="guessField">
+        <p></p>
+        <p></p>
+        <p></p>
+        <input type="submit" value="输好了点这儿就完事了儿，铁子" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+        <H2 class="guesses"></H2>
+        <p class="guessSubmit"></p>
+    </div>
+
+    <script>
+        const guesses = document.querySelector('.guesses');
+        const guessSubmit = document.querySelector('.guessSubmit');
+        const guessField = document.querySelector('.guessField');
+        let gNum;
+
+        function checkGuess() {
+            alert('程序运行中,点击【确定】以继续。');
+            alert('俺用量子波动技术和互联网+技术，猜到你的数字是' + (Number(guessField.value) + 2) + '。');
+            alert('不对，应该小一点，毕竟恁是个小逼崽子,应该是' + Number(guessField.value) + '才对嘛。');
+            guesses.textContent = '你看我厉害吧，小逼崽子';
+            guessSubmit.textContent = '（PS:本人工智能没有作弊，以图灵测试的名字担保。）';
+        }
+
+        guessSubmit.addEventListener('click', checkGuess);
+    </script>
+</body>
+
+</html>
