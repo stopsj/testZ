@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <div>
+    <h1>DS上班日查询</h1>
+    <div class="box">
+      <div>
+        <input type="date" name="dateIput" id="dateIput" value="" />
+      </div>
+        <label for="">组长:</label>
+        <div class="teamChose">
+          <input type="radio" name="teamRadio" value="0" checked />ZT
+          <input name="teamRadio" type="radio" value="1">ZGF
+          <input type="radio" name="teamRadio" value="2">CD
+        </div>
+        <input type="submit" name="team" id="teamChose" value="提交" />
+    </div>
+    <p id="showText"></p>
+  </div>
+</body>
+<script type="text/javascript" charset="utf-8" src="add.js">
+</script>
+
+</html>
